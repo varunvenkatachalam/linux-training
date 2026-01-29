@@ -1,0 +1,88 @@
+Script started on 2026-01-29 14:27:44+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ls
+[?2004llinux_ass01_output.txt
+[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ touch q1_file
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ chmod 777 q1_file
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ls -l q1_file
+[?2004l-rwxrwxrwx 1 varun varun 0 Jan 29 14:28 [0m[01;32mq1_file[0m
+[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ touch q2_filr[Ke
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ chmod g-w q2_file
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ls -l q2_file
+[?2004l-rw-r--r-- 1 varun varun 0 Jan 29 14:28 q2_file
+[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ mkdir -p dir1/dir2
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ touch dir1/dir2/q3_file
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ln -s dir1.dir2/q3_file[1Pdir2/q3_file/dir2/q3_file[C[C[C[C[C[C[C[C[C[C[C[C dir1/q[Kfile_softlink
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ls -l dir1
+[?2004ltotal 4
+drwxr-xr-x 2 varun varun 4096 Jan 29 14:29 [0m[01;34mdir2[0m
+lrwxrwxrwx 1 varun varun   17 Jan 29 14:29 [40;31;01mfile_softlink[0m -> [40;31;01mdir1/dir2/q3_file[0m
+[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ps -ef
+[?2004lUID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 13:44 ?        00:00:00 /sbin/init
+root           2       1  0 13:44 ?        00:00:00 /init
+root           7       2  0 13:44 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --
+root          43       1  0 13:44 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root          95       1  0 13:44 ?        00:00:01 /usr/lib/systemd/systemd-udevd
+systemd+     110       1  0 13:44 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     111       1  0 13:44 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         171       1  0 13:44 ?        00:00:00 /usr/sbin/cron -f -P
+message+     172       1  0 13:44 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --syst
+root         185       1  0 13:44 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         190       1  0 13:44 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 v
+syslog       205       1  0 13:44 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         210       1  0 13:44 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         211       1  0 13:44 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-s
+root         304       2  0 13:44 pts/1    00:00:00 /bin/login -f
+varun        317       1  0 13:44 ?        00:00:00 /usr/lib/systemd/systemd --user
+varun        318     317  0 13:44 ?        00:00:00 (sd-pam)
+varun        327     304  0 13:44 pts/1    00:00:00 -bash
+root         453       1  0 14:04 ?        00:00:00 /init
+polkitd      734       1  0 14:04 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+varun        918     453  0 14:08 ?        00:00:00 script linux_ass01_output.txt
+varun        919     918  0 14:08 pts/2    00:00:00 bash -i
+varun       1059     919  0 14:16 pts/2    00:00:00 vim linus_ass01_output.txt
+root        1108       2  0 14:20 ?        00:00:00 /init
+root        1110    1108  0 14:20 ?        00:00:00 /init
+varun       1113    1110  0 14:20 pts/3    00:00:00 -bash
+root        1143       2  0 14:22 ?        00:00:00 /init
+root        1144    1143  0 14:22 ?        00:00:00 /init
+varun       1148    1144  0 14:22 pts/4    00:00:00 sh -c "$VSCODE_WSL_EXT_LOCATION/scripts/wslServer.sh" c9d77990917f31
+varun       1149    1148  0 14:22 pts/4    00:00:00 sh /mnt/c/Users/vvaru/.vscode/extensions/ms-vscode-remote.remote-wsl
+varun       1226    1149  0 14:22 pts/4    00:00:00 sh /home/varun/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d
+varun       1230    1226  1 14:22 pts/4    00:00:06 /home/varun/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d1dd
+root        1241       2  0 14:22 ?        00:00:00 /init
+root        1243    1241  0 14:22 ?        00:00:00 /init
+varun       1246    1243  0 14:22 pts/5    00:00:00 /home/varun/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d1dd
+root        1257       2  0 14:22 ?        00:00:00 /init
+root        1258    1257  0 14:22 ?        00:00:00 /init
+varun       1262    1258  0 14:22 pts/6    00:00:00 /home/varun/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d1dd
+varun       1279    1230  2 14:22 pts/4    00:00:10 /home/varun/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d1dd
+varun       1304    1230  0 14:22 pts/4    00:00:01 /home/varun/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d1dd
+root        1316       2  0 14:22 ?        00:00:00 /init
+root        1317    1316  0 14:22 ?        00:00:00 /init
+varun       1318    1317  0 14:22 pts/7    00:00:00 /bin/sh -c cd '/' && /bin/sh
+varun       1319    1318  0 14:22 pts/7    00:00:00 /bin/sh
+varun       1333    1319  0 14:22 pts/7    00:00:00 /home/varun/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d1dd
+varun       1371    1333  0 14:22 pts/7    00:00:00 /bin/sh
+varun       1455    1304  0 14:22 pts/10   00:00:00 /usr/bin/bash --init-file /home/varun/.vscode-server/bin/c9d77990917
+varun       2519    1113  0 14:27 pts/3    00:00:00 script -q linux_ass01_output.txt
+varun       2520    2519  0 14:27 pts/8    00:00:00 bash -i
+varun       2929    2520  0 14:29 pts/8    00:00:00 ps -ef
+[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ mkdir files
+[?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ cd files
+[?2004l[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ touch file1
+[?2004l[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ sleep 1
+[?2004l[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ toi[Kuch file2
+[?2004l[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ sleep 1
+[?2004l[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ touch file3
+[?2004l[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ ls -lt > sorted_files.txt
+[?2004l[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ cat sorted_files.txt
+[?2004ltotal 0
+-rw-r--r-- 1 varun varun 0 Jan 29 14:30 sorted_files.txt
+-rw-r--r-- 1 varun varun 0 Jan 29 14:30 file3
+-rw-r--r-- 1 varun varun 0 Jan 29 14:30 file2
+-rw-r--r-- 1 varun varun 0 Jan 29 14:30 file1
+[?2004h]0;varun@Nitro: ~/embed/files[01;32mvarun@Nitro[00m:[01;34m~/embed/files[00m$ exit
+[?2004lexit
+
+Script done on 2026-01-29 14:31:13+00:00 [COMMAND_EXIT_CODE="0"]
