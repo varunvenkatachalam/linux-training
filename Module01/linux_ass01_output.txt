@@ -1,6 +1,4 @@
 Script started on 2026-01-29 14:27:44+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
-[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ls
-[?2004llinux_ass01_output.txt
 [?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ touch q1_file
 [?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ chmod 777 q1_file
 [?2004l[?2004h]0;varun@Nitro: ~/embed[01;32mvarun@Nitro[00m:[01;34m~/embed[00m$ ls -l q1_file
